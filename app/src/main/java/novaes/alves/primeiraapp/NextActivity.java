@@ -15,7 +15,7 @@ public class NextActivity extends AppCompatActivity {
 
         Intent i = getIntent();
         String texto = i.getStringExtra("texto");
-        TextView tvTexto = findViewById(R.id.tvTexto);
+        TextView tvTexto = findViewById(R.id.tvTexto); //cria a caixa e a nomeia com tvTexto
         tvTexto.setText(texto);
     }
 }
