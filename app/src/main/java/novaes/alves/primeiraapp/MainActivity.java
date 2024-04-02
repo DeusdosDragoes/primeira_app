@@ -13,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); //Constroi os elementos de interface
 
-        Button btnEnviar = findViewById(R.id.btnEnviar);
+        Button btnEnviar = findViewById(R.id.btnEnviar); //Obtem o botao enviar
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
