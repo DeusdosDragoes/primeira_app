@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText etDigiteAqui=findViewById(R.id.etDigiteAqui); //Faz com que seja possivel editar a caixa de texto
-                String TextoDigitado = etDigiteAqui.getText().toString();
+                String TextoDigitado = etDigiteAqui.getText().toString(); //seta a caixa como String
                 Intent i = new Intent(MainActivity.this,NextActivity.class);
                 i.putExtra("texto", TextoDigitado);
-                startActivity(i);
+                startActivity(i); //começa a ativação
             }
         });
 
