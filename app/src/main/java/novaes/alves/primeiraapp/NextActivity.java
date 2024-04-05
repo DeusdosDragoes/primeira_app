@@ -11,11 +11,11 @@ public class NextActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_next);
+        setContentView(R.layout.activity_next);// para setar o conteudo da caixa
 
-        Intent i = getIntent();
-        String texto = i.getStringExtra("texto");
+        Intent i = getIntent(); //declara intenção
+        String texto = i.getStringExtra("texto"); //extrai de "texto" apenas string
         TextView tvTexto = findViewById(R.id.tvTexto); //cria a caixa e a nomeia com tvTexto
-        tvTexto.setText(texto);
+        tvTexto.setText(texto); //seta a variavel a caixa de texto com o que foi digitado
     }
 }
